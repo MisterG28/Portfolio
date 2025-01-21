@@ -63,7 +63,7 @@ export const Projects = () => {
                 <p className="text-center">⚠️ Attention : le jeu pourrait s'avérer légèrement difficile, alors soyez prêt(e) à relever le défi ! 😉</p>
                 <p className="lg:hidden text-center text-lg text-primary font-semibold">Passez sur un ordinateur pour accéder au jeu !</p>
                 <iframe
-                    src="https://shooter-sand.vercel.app/"
+                    src="https://misterg28.github.io/Sooter/"
                     title="Mini-jeu"
                     width="800"
                     height="600"
