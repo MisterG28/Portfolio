@@ -3,6 +3,8 @@ import { Section } from "./Section";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
+/* eslint-disable react/no-unescaped-entities */
+
 const Code = ({className,...props}: ComponentPropsWithoutRef<"span">) => {
 
     return <span className={cn("bg-accent/30 hover:bg-accent/50 font-mono border border-accent px-4 py-2 rounded-sm text-primary transition-colors", className)} {...props}>

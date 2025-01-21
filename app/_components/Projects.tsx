@@ -1,6 +1,8 @@
 import { ProjectCard } from "./ProjectCard";
 import { Section } from "./Section";
 
+/* eslint-disable react/no-unescaped-entities */
+
 const projectTable = [
     {
         id: 1,

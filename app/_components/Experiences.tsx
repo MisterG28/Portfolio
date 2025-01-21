@@ -1,6 +1,8 @@
 import { Section } from "./Section";
 import ExperienceCard from './ExperienceCard';
 
+/* eslint-disable react/no-unescaped-entities */
+
 const experiences = [
   {
     title: "Développeur Full Stack",
