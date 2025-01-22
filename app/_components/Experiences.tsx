@@ -14,9 +14,9 @@ const experiences = [
   {
     title: "Stagiaire Développeur Web",
     company: "Ana Sophrologie",
-    duration: "Janvier 2023 - Novembre 2023",
+    duration: "Août 2023 - Octobre 2023",
     description: `Création d’un site web en collaboration, en utilisant
-    React/Next.js et PHP, intégrant un calendrier de rendez-vous ainsi
+    React/Next.js et Node.js, intégrant un calendrier de rendez-vous ainsi
     qu’un formulaire de contact.`
   },
   {
