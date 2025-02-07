@@ -23,7 +23,7 @@ interface ProjectCardProps {
     description: string;
     technologies: string[];
     sitePicture: string;
-    siteURL?: string;
+    siteURL?: URL;
     preciseDescription: string;
 }
 
