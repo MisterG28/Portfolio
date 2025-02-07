@@ -14,7 +14,7 @@ export const Techs = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-4 w-full">
                 <TechCard icon={ReactIcon} tech="React" level="Intermédiaire 3/5"/>
                 <TechCard icon={NextjsIcon} tech="NextJS" level="Intermédiaire 3/5"/>
-                <TechCard icon={NodejsIcon} tech="NodeJS" level="Débutant 1/5"/>
+                <TechCard icon={NodejsIcon} tech="NodeJS" level="Intermédiaire 3/5"/>
                 <TechCard icon={TailwindcssIcon} tech="Tailwindcss" level="Confirmé 4/5"/>
                 <TechCard icon={WordpressIcon} tech="Wordpress" level="Confirmé 4/5"/>
                 <TechCard icon={FigmaIcon} tech="Figma" level="Confirmé 4/5"/>

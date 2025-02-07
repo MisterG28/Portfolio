@@ -2,7 +2,6 @@ import { ProjectCard } from "./ProjectCard";
 import { Section } from "./Section";
 
 /* eslint-disable react/no-unescaped-entities */
-
 const projectTable = [
     {
         id: 1,
@@ -20,22 +19,36 @@ const projectTable = [
         title: "Portfolio",
         year: "2025",
         description: "Un portfolio interactif mettant en valeur mes compétences et projets.",
-        technologies: ["React", "NextJS","TailwindCSS"],
+        technologies: ["React", "NextJS", "NodeJS","TailwindCSS"],
         sitePicture : "PortfolioImg",
         preciseDescription: `Site sur lequel vous êtes actuellement, et qui est toujours en cours d'évolution.
         Il me permet de mettre en valeur mes compétences et projets.`,
     },
     {
         id: 3,
+        title: "Napoli Pizza",
+        year: "2022",
+        description: "Un portfolio interactif mettant en valeur mes compétences et projets.",
+        technologies: ["WordPress", "Figma"],
+        sitePicture : "NapoliPizzaImg",
+        siteURL : "https://pizzaezy.fr/",
+        preciseDescription: `Site vitrine conçu en autonomie lors de mon stage chez Web Studio, avant ma formation en DWWM.
+        Il présente l'intégralité des plats proposés par Napoli Pizza, accompagnés de leurs descriptions et informations associées.
+        Le site inclut également les coordonnées du restaurant, le tout dans un design validé en amont par le commanditaire.`,
+    },
+    /*
+    {
+        id: 4,
         title: "Ana Sophrologie",
         year: "2023",
         description: "Une application web pour permettre une prise de rendez-vous rapide avec Ana Sophrologie.",
         technologies: ["React", "NextJS", "PHP","TailwindCSS", "Figma"],
         sitePicture : "AnaSophrologieImg",
+        siteURL : "",
         preciseDescription: `Site web conçu en collaboration, intégrant un calendrier de rendez-vous interactif et 
         un formulaire de contact convivial. Il offre également des informations détaillées sur la sophrologie et les 
         méthodes utilisées par Ana Sophrologie, permettant aux utilisateurs de mieux comprendre cette pratique et ses bienfaits.`,
-    },
+    },*/
 ];
 
 export const Projects = () => {
@@ -51,6 +64,7 @@ export const Projects = () => {
                         description={project.description}
                         technologies={project.technologies}
                         sitePicture={project.sitePicture}
+                        siteURL={project.siteURL}
                         preciseDescription={project.preciseDescription}
                     />
                 ))}

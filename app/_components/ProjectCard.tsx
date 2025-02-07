@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { FigmaIcon } from "./icons/FigmaIcon";
 import { NextjsIcon } from "./icons/NextjsIcon";
+import { NodejsIcon } from "./icons/NodejsIcon";
 import { GithubIcon } from "./icons/GithubIcon";
 import { ReactIcon } from "./icons/ReactIcon";
 import { TailwindcssIcon } from "./icons/TailwindcssIcon";
@@ -13,6 +14,8 @@ import Image from "next/image";
 import PortfolioImg from "./../images/Portfolio.jpg";
 import ProjetDpImg from "./../images/projet_dp.jpg";
 import AnaSophrologieImg from "./../images/Ana_Sophrologie.jpg";
+import NapoliPizzaImg from "./../images/napoli_pizza.jpg";
+import Link from "next/link";
 
 interface ProjectCardProps {
     title: string;
@@ -20,6 +23,7 @@ interface ProjectCardProps {
     description: string;
     technologies: string[];
     sitePicture: string;
+    siteURL: URL;
     preciseDescription: string;
 }
 
@@ -29,6 +33,7 @@ export const ProjectCard = ({
     description,
     technologies,
     sitePicture,
+    siteURL,
     preciseDescription,
 }: ProjectCardProps) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -38,6 +43,7 @@ export const ProjectCard = ({
         const icons: { [key: string]: JSX.Element } = {
             Figma: <FigmaIcon size={size} />,
             NextJS: <NextjsIcon size={size} />,
+            NodeJS: <NodejsIcon size={size} />,
             GitHub: <GithubIcon size={size} />,
             React: <ReactIcon size={size} />,
             TailwindCSS: <TailwindcssIcon size={size} />,
@@ -53,6 +59,7 @@ export const ProjectCard = ({
         case "PortfolioImg": return PortfolioImg;
         case "ProjetDpImg": return ProjetDpImg;
         case "AnaSophrologieImg": return AnaSophrologieImg;
+        case "NapoliPizzaImg" : return NapoliPizzaImg;
         default:
             return "";
         }
@@ -105,12 +112,35 @@ export const ProjectCard = ({
             {isModalOpen && (
                 <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
                     <div className="bg-white rounded-lg p-6 w-11/12 max-w-lg shadow-lg flex flex-col gap-4">
-                        <h3 className="text-2xl font-semibold mb-2 text-primary text-gray-800 font-geist-mono">{title}</h3>
+                        <h3 className="text-2xl font-bold mb-2 text-gray-700 font-caption">{title}</h3>
                         {siteImage ? (
                             <Image src={siteImage} alt={`Image du site: ${title}`} className="w-full max-w-[370px] mx-auto" />
                             ) : (
                             <p>Aucune image disponible</p>
                         )}
+                        {siteURL && (
+                            <Link 
+                            href={siteURL} 
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-500 hover:text-gray-700 font-semibold flex gap-1"
+                            >
+                                Voir le site
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                    className="w-5 h-5"
+                                >
+                                    <path
+                                        fillRule="evenodd"
+                                         d="M5 10a.75.75 0 01.75-.75h6.638L10.23 7.29a.75.75 0 111.04-1.08l3.5 3.25a.75.75 0 010 1.08l-3.5 3.25a.75.75 0 11-1.04-1.08l2.158-1.96H5.75A.75.75 0 015 10z"
+                                         clipRule="evenodd"
+                                     ></path>
+                                </svg>                                
+                            </Link>
+                        )}
+                        
                         <p className="mb-2 text-gray-600 text-base">{preciseDescription}</p>
                         <p className="text-gray-700 text-sm">Année : {year}</p>
                         <div className="flex gap-2 flex-wrap">
