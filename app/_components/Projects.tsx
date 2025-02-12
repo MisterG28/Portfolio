@@ -19,7 +19,7 @@ const projectTable = [
         title: "Portfolio",
         year: "2025",
         description: "Un portfolio interactif mettant en valeur mes compétences et projets.",
-        technologies: ["React", "NextJS", "NodeJS","TailwindCSS"],
+        technologies: ["TypeScript", "React", "NextJS", "NodeJS","TailwindCSS"],
         sitePicture : "PortfolioImg",
         preciseDescription: `Site sur lequel vous êtes actuellement, et qui est toujours en cours d'évolution.
         Il me permet de mettre en valeur mes compétences et projets.`,

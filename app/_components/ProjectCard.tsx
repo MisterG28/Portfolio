@@ -9,6 +9,7 @@ import { ReactIcon } from "./icons/ReactIcon";
 import { TailwindcssIcon } from "./icons/TailwindcssIcon";
 import { WordpressIcon } from "./icons/WordpressIcon";
 import { JavascriptIcon } from "./icons/JavascriptIcon";
+import { TypeScriptIcon } from "./icons/TypeScriptIcon";
 import { PhpIcon } from "./icons/PhpIcon";
 import Image from "next/image";
 import PortfolioImg from "./../images/Portfolio.jpg";
@@ -49,6 +50,7 @@ export const ProjectCard = ({
             TailwindCSS: <TailwindcssIcon size={size} />,
             WordPress: <WordpressIcon size={size} />,
             JavaScript: <JavascriptIcon size={size} />,
+            TypeScript : <TypeScriptIcon size={size}/>,
             PHP: <PhpIcon size={size} />,
         };
         return icons[tech] || null;

@@ -2,7 +2,6 @@ import { ComponentPropsWithoutRef } from "react";
 import { Section } from "./Section";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
-
 /* eslint-disable react/no-unescaped-entities */
 
 const Code = ({className,...props}: ComponentPropsWithoutRef<"span">) => {
@@ -17,7 +16,7 @@ export const Hero = () => {
                 <h2  className="font-caption font-bold text-5xl text-primary">Killyan Piriou</h2>
                 <h3 className="text-3xl font-caption">Développeur Web Full Stack</h3>
                 <p className="text-base text-justify">
-                    Je m'appelle Killyan, étudiant à l'ENI en Conception et Développement d'applications.
+                    Je m'appelle Killyan, admis à l'ENI en Conception et Développement d'applications.
                     Je suis actuellement à la recherche d'une alternance. Lors de ma formation de préparation 
                     aux métiers du numérique et de l'informatique, j'ai découvert le développement web, ce qui 
                     m'a permis d'en apprendre les bases. Par la suite, j'ai suivi une formation en développement 
