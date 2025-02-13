@@ -22,7 +22,9 @@ export const Hero = () => {
                     m'a permis d'en apprendre les bases. Par la suite, j'ai suivi une formation en développement 
                     web et web mobile, grâce à laquelle j'ai pu renforcer mes compétences aussi bien en Back-end qu'en Front-end.
                     J'accorde également une grande importance au web design, car je considère que l'expérience 
-                    utilisateur (UX) et l'interface utilisateur (UI) sont des éléments essentiels à la réussite d'un site web.
+                    utilisateur (UX) et l'interface utilisateur (UI) sont des éléments essentiels à la réussite d'un site web. 
+                    Aujourd'hui, je m'intéresse particulièrement à intégrer l'IA dans mes projets pour améliorer leur performance, 
+                    ainsi que l'expérience des utilisateurs.
                 </p>
             </div>
             <div className="flex-1 flex flex-col gap-4 items-center">
